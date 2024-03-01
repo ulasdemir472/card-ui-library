@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #e5e7eb; /* gray-200 */
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow */
+}
+#card img {
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 24rem; /* 24 * 4 = 96 */
+  }
+  @media (min-width: 640px) {
+    @card img {
+      height: auto !important; /* !important is used to override */
+      width: 12rem; /* 48 / 4 = 12 */
+      border-radius: 0; /* rounded-none */
+    }
+  }
+
+  #card h5{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* font-bold */
+    color: #1f2937; /* gray-900 */
+  }
+  
+  #card p{
+    margin-bottom: 1rem;
+    font-size: 1rem; /* base font size */
+    color: #374151; /* gray-700 */
+  }
