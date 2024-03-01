@@ -17,14 +17,7 @@
     width: 100%;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    height: 24rem; /* 24 * 4 = 96 */
-  }
-  @media (min-width: 640px) {
-    @card img {
-      height: auto !important; /* !important is used to override */
-      width: 12rem; /* 48 / 4 = 12 */
-      border-radius: 0; /* rounded-none */
-    }
+    height: 24rem;
   }
 
   #card h5{
